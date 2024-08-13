@@ -8,7 +8,7 @@ dotenv.config();
 const bot = new Telegraf(process.env.TG_BOT_TOKEN!);
 
 bot.start((ctx) =>
-  ctx. reply ("Welcome to our counter app!", {
+  ctx.reply ("Welcome to our counter app!", {
     reply_markup: {
       keyboard: [
         ["Increment by 5"],
